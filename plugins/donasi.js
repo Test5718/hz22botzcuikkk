@@ -1,5 +1,5 @@
 let handler = async m => m.reply(`
-            .✵.GRUP AZZBOT.✵.
+            .✵.GRUP HZ22BOTZ.✵.
 
             https://chat.whatsapp.com/CtRFYxpmxPb4dvoMkxIptS
 `.trim()) // Tambah sendiri kalo mau
