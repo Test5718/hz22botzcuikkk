@@ -11,7 +11,7 @@ let handler = async (m, { conn, args }) => {
         m.reply('Kamu di warn oleh OWNER Atau MODERATOR!!, dan sekarang kamu punya *' + (user.warn + 1) + '* WARN. Ingat Jika kamu mendapat warn 4 kali kamu akan otomatis ke banned', mention)
     } else if ((user.warn * 1) > 2) {
         let reason = (args.length > 0 || args[1] ? args.slice(1).join(' ') : '4 kali WARN') || '4 kali WARN'
-        user.Banneduser = true
+        global.db.data.users.banned = true
         user.BannedReason = reason
         user.warn = 0
         m.reply('*Dia sudah Terbanned, karena mendapatkan 4 warn*')
